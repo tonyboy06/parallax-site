@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.para-1,.para-2,.para-3, .para-4 {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.70;
+
+    /* This is how you make a parallax effecct
+        fixed - parallax
+        scroll - normal
+    */
+    background-attachment: fixed;
+} 
+
+.para-1 {
+    background-image: url("https://images.pexels.com/photos/8533828/pexels-photo-8533828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 100%;
+}
+
+.para-2 {
+    background-image: url("https://images.pexels.com/photos/4913423/pexels-photo-4913423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 400px;
+}
+
+.para-3 {
+    background-image: url("https://images.pexels.com/photos/4913401/pexels-photo-4913401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 400px;
+}
+
+.para-4 {
+    background-image: url("https://images.pexels.com/photos/1260372/pexels-photo-1260372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-height: 100%;
+}
+
+.section {
+    text-align: center;
+    padding: 40px 90px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.para-title {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .para-title {
+        font-size: 20px;
+    }
+    .border {
+        padding: 10px;
+    }
+    .section {
+        font-size: 16px;
+        padding: 20px 20px;
+        text-align: justify;
+    }
+
+  }
